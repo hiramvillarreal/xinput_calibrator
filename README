@@ -26,8 +26,21 @@ Usage:
 Simply run:
     xinput_calibrator
 
-For more information, run with --help or check the manpage.
+After run read the output and add your personal setttings at the end of this file:
+sudo nano /usr/share/X11/xorg.conf.d/10-evdev.conf
+
+    Section "InputClass"
+            Identifier      "calibration"
+            MatchProduct    "eGalax Inc. Touch"
+            Option  "Calibration"   "99 1925 1908 145"
+            Option  "SwapAxes"      "0"
+    EndSection
+
+
+For more in
+formation, run with --help or check the manpage.
 The scripts/ directory constains scripts to get calibration from hal or use a pointercal file to reapply xinput commands across reboots
+
 
 
 More about the project:
