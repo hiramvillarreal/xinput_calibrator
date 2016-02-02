@@ -8,6 +8,11 @@ Bugs:    http://github.com/tias/xinput_calibrator/issues
 
 Build instructions:
 -------------------
+Install needed dependences:
+sudo apt-get install autoconf  
+sudo apt-get install libtool
+sudo apt-get install libx11-dev libxext-dev libxi-dev x11proto-input-dev
+Then run script:
 ./autogen.sh
     Sets up build environment, run ./autogen.sh --help to see the build options
     Notable build options:
